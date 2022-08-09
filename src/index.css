@@ -1,13 +1,105 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.App {
+  background-image: url('./assets/wintersnowtree.jpg');
+  background-size: cover;
+  background-position: bottom;
+}
+
+.App.warm{
+  background-image: url('./assets/springtreesakura.jpg');
+}
+
+main{
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.2),rgba(0,0,0,0.75));
+  padding: 25px;
+}
+
+.title{
+  color: white;
+  margin-bottom: 15px;
+  text-shadow: 3px 3px rgba(0,0,0,0.75);
+}
+
+.search-box{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.search-box .search{
+  display: block;
+  width: 100%;
+  padding: 15px;
+
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 5px;
+
+  box-shadow: 0px 5px rgba(0,0,0,0.2);
+}
+
+.search-box .search:focus{
+  background-color: rgba(255,255,255,0.75);
+}
+
+.location-box .location{
+  color:white;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50,50,70,0.5);
+
+  margin: 10px auto;
+}
+
+.location-box .date{
+  color: white;
+  font-size: 20px;
+  font-weight: 200;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 2px 2px rgba(50,50,70,0.5);
+
+  margin: 5px auto;
+}
+
+.weather-box{
+  text-align: center;
+  background-color: rgba(0,0,0,0.2);
+  box-shadow: 6px 6px rgba(0,0,0,0.2);
+  border-radius: 16px;
+  padding: 10px 15px;
+  margin: 15px auto;
+}
+
+.weather-box .temp{
+  display: inline-block;
+  margin: 10px auto;
+  position: relative;
+
+  color: white;
+  font-size: 100px;
+  font-weight: 900;
+  text-shadow: 6px 6px rgba(50,50,70,0.5);
+  text-align: center;
+}
+
+.weather-box .weather{
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+  text-shadow: 4px 4px rgba(50,50,70,0.5);
 }
